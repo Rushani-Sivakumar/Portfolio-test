@@ -68,7 +68,7 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-6">
         <p className="eyebrow mb-3"># projects</p>
         <h2 className="font-display text-3xl font-semibold tracking-tight mb-10">
-          Academic Projects
+          Projects
         </h2>
 
         <div className="space-y-6">

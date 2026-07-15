@@ -49,7 +49,7 @@ export default function Hero() {
           </h1>
           <p className="mt-6 text-lg text-muted max-w-md">
             Final-year Computer Science undergraduate turning messy, real-world datasets
-            into clear, model-backed decisions — with Python, statistics, and a lot of
+            into clear, model-backed decisions — with Python, statistics, machine learning and a lot of
             curiosity.
           </p>
 

@@ -3,51 +3,37 @@ export const projects = [
   {
     id: '01',
     module: 'Data Analytics',
-    title: 'Global AI Job Market & Salary Trends 2025',
+    title: 'Retail Price Trend & Inflation Analysis',
     summary:
-      'End-to-end analysis of the global AI job market, combining descriptive, inferential, and predictive methods to uncover in-demand roles, top-paying skills, and regional hiring imbalances.',
+      'An interactive Dash dashboard analyzing ~22,000 weekly retail price records (2020\u20132024) across 8 product categories to study inflation dynamics through Sri Lanka\u2019s 2022 economic crisis.',
     highlights: [
-      'Descriptive analysis of job & salary distribution across geographies and roles',
-      'Inferential statistics to test associations between role attributes and compensation',
-      'Predictive models estimating salary and demand from role characteristics',
+      'Conducted formal hypothesis testing (Shapiro-Wilk, Mann-Whitney U, Kruskal-Wallis H, Dunn\u2019s post-hoc) to statistically confirm significant price shifts across categories and time periods',
+      'Built cascading filters (year/month/category/item), KPI tracking, and a custom \u201cInflation Leaderboard\u201d ranking items by percentage price increase',
+      'Cleaned and structured ~22,000 raw weekly price records into an analysis-ready dataset',
     ],
-    tech: ['Python', 'Pandas', 'Statsmodels', 'Matplotlib'],
-    metric: '3 analysis stages',
-    repoUrl: '#',
+    tech: ['Python', 'Pandas', 'SciPy', 'Dash', 'Plotly'],
+    metric:'22,000 rows · 8 categories · 5 years of weekly data' ,
+    repoUrl: 'https://github.com/Rushani-Sivakumar/Retail_Price_Trend_Analysis',
     demoUrl: '',
   },
   {
     id: '02',
-    module: 'Introduction to Machine Learning',
-    title: 'Student Depression Risk Classification',
+    module: 'Machine Learning',
+    title: 'Global AI Job Market & Salary Trends 2025',
     summary:
-      'Built and compared multiple classification models to predict student depression risk from academic, lifestyle, and psychological indicators, addressing class imbalance for reliable predictions.',
+      'A machine learning pipeline that predicts AI/ML job salaries from job postings, comparing multiple models via cross-validation ',
     highlights: [
-      'Cleaned and encoded a 27,900-row × 18-column dataset (Kaggle)',
-      'Handled class imbalance using SMOTE / oversampling',
-      'Trained and compared Logistic Regression, Decision Tree, and Random Forest classifiers',
+      'Compared Linear Regression, Ridge, and Random Forest pipelines on 15,000 job postings using 5-fold cross-validation for model selection',
+      'Built one shared preprocessing pipeline handling categorical encoding, multi-hot skill features, and date-derived features across all candidate models',
+      'Selected Random Forest as the best model, achieving R\u00b2 = 0.88 on held-out test data',
     ],
-    tech: ['Python', 'scikit-learn', 'Pandas', 'NumPy'],
+    tech: ['Python', 'Pandas', 'Statsmodels', 'Matplotlib'],
     metric: '27,900 rows · 3 models compared',
-    repoUrl: '#',
+    repoUrl: 'https://github.com/Rushani-Sivakumar/AI_Job_Salary_Prediction',
     demoUrl: '',
   },
-  {
-    id: '03',
-    module: 'Big Data Analysis',
-    title: 'Netflix Viewing Trends Dashboard',
-    summary:
-      'An interactive Dash dashboard for a streaming platform\u2019s marketing team, turning raw viewing logs into actionable insight on audience behaviour, seasonality, and content performance.',
-    highlights: [
-      'Cleaned and feature-engineered raw viewing data (release/viewing year & month extraction, monthly view aggregation)',
-      'Built 8 interactive visualizations: bar, pie, line, scatter, bubble, and heatmap charts',
-      'Surfaced insights on category performance, language demographics, and seasonal trends',
-    ],
-    tech: ['Python', 'Pandas', 'Dash', 'Plotly'],
-    metric: '8 interactive visualizations',
-    repoUrl: '#',
-    demoUrl: '',
-  },
+  
+
 ]
 
 export const certifications = [
