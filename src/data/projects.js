@@ -55,6 +55,6 @@ export const certifications = [
     title: 'IBM Data Science Professional Certificate',
     issuer: 'IBM · Coursera',
     detail: '12-course professional program covering the full data science workflow — from Python and SQL to machine learning and applied capstone projects.',
-    credentialUrl: '#',
+    credentialUrl: 'https://coursera.org/share/f1e650dff0c26514b5bf72395fd7a856',
   },
 ]

@@ -19,4 +19,5 @@ export const skillGroups = [
     tag: 'tools',
     items: ['Excel', 'Jupyter Notebook', 'Git'],
   },
+  
 ]

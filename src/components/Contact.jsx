@@ -57,14 +57,14 @@ export default function Contact() {
 
           <div className="mt-8 flex flex-col gap-3 font-mono text-sm">
             {/* TODO: replace with your real email address and profile links */}
-            <a href="mailto:your.email@example.com" className="inline-flex items-center gap-2 hover:text-signal-blue">
-              <Mail size={16} /> your.email@example.com
+            <a href="mailto:rushani.sivakumar@gmail.com" className="inline-flex items-center gap-2 hover:text-signal-blue">
+              <Mail size={16} /> rushani.sivakumar@gmail.com
             </a>
-            <a href="#" className="inline-flex items-center gap-2 hover:text-signal-blue">
-              <Github size={16} /> github.com/your-username
+            <a href="https://github.com/Rushani-Sivakumar" className="inline-flex items-center gap-2 hover:text-signal-blue">
+              <Github size={16} /> github.com/Rushani-Sivakumar
             </a>
-            <a href="#" className="inline-flex items-center gap-2 hover:text-signal-blue">
-              <Linkedin size={16} /> linkedin.com/in/your-profile
+            <a href="https://www.linkedin.com/in/rushani-sivakumar" className="inline-flex items-center gap-2 hover:text-signal-blue">
+              <Linkedin size={16} /> linkedin.com/in/rushani-sivakumar
             </a>
           </div>
         </div>

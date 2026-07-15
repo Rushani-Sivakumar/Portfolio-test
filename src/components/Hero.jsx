@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react'
+import ProfileImage from '/Profile.jpeg'
 
 const CODE_LINES = [
   '>>> import pandas as pd',
@@ -37,7 +38,7 @@ export default function Hero() {
     <section id="top" className="relative pt-40 pb-24 overflow-hidden">
       <div className="absolute inset-0 grid-fade pointer-events-none" aria-hidden="true" />
 
-      <div className="relative max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
+      <div className="relative  max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
         {/* Left: intro */}
         <div>
           <p className="eyebrow mb-4"># introduction</p>
@@ -61,7 +62,8 @@ export default function Hero() {
             </a>
             {/* TODO: replace '#' with a link to your hosted resume PDF */}
             <a
-              href="#"
+              href="/Rushani_Resume.pdf"
+              download
               className="inline-flex items-center gap-2 border border-ink px-5 py-3 font-mono text-sm hover:border-signal-blue hover:text-signal-blue transition-colors"
             >
               Download resume
@@ -70,20 +72,20 @@ export default function Hero() {
 
           <div className="mt-8 flex items-center gap-5 text-ink/70">
             {/* TODO: replace these href values with your real profile links */}
-            <a href="#" aria-label="GitHub" className="hover:text-signal-blue transition-colors">
+            <a href="https://github.com/Rushani-Sivakumar" aria-label="GitHub" className="hover:text-signal-blue transition-colors">
               <Github size={20} />
             </a>
-            <a href="#" aria-label="LinkedIn" className="hover:text-signal-blue transition-colors">
+            <a href="https://www.linkedin.com/in/rushani-sivakumar" aria-label="LinkedIn" className="hover:text-signal-blue transition-colors">
               <Linkedin size={20} />
             </a>
-            <a href="mailto:your.email@example.com" aria-label="Email" className="hover:text-signal-blue transition-colors">
+            <a href="mailto:rushani.sivakumar@gmail.com" aria-label="Email" className="hover:text-signal-blue transition-colors">
               <Mail size={20} />
             </a>
           </div>
         </div>
 
         {/* Right: signature terminal -> dataframe card */}
-        <div className="bg-ink text-paper rounded-md shadow-xl overflow-hidden font-mono text-[13px] leading-relaxed">
+        {/* <div className="bg-ink text-paper rounded-md shadow-xl overflow-hidden font-mono text-[13px] leading-relaxed">
           <div className="flex items-center gap-1.5 px-4 py-3 border-b border-white/10">
             <span className="w-2.5 h-2.5 rounded-full bg-signal-orange/80" />
             <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
@@ -120,6 +122,22 @@ export default function Hero() {
               </div>
             )}
           </div>
+        </div> */}
+
+        {/* <div className="w-full h-full p-5 text-paper rounded-md shadow-xl overflow-hidden font-mono text-[13px] leading-relaxed flex items-center justify-center">
+        <img
+          src={ProfileImage}
+          alt="Rushani Sivakumar"
+          className="w-full h-full object-cover rounded-md"
+  />
+        </div> */}
+
+        <div className=" w-full max-h-[420px] p-20 text-paper rounded-md  overflow-hidden font-mono text-[13px] leading-relaxed flex items-center justify-center">
+          <img
+            src={ProfileImage}
+            alt="Rushani Sivakumar"
+            className="rounded-md"
+          />
         </div>
       </div>
     </section>

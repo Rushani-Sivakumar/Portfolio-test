@@ -4,7 +4,7 @@ const stats = [
   { label: 'year', value: 'Final Year' },
   { label: 'degree', value: 'B.Sc (Hons) CS' },
   { label: 'certified', value: 'IBM Data Science' },
-  { label: 'projects', value: '3 academic ML/DA' },
+  // { label: 'projects', value: '3 academic ML/DA' },
 ]
 
 export default function About() {
