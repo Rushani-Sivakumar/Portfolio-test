@@ -2,8 +2,8 @@ import useReveal from '../hooks/useReveal.js'
 
 const stats = [
   { label: 'year', value: 'Final Year' },
-  { label: 'degree', value: 'B.Sc (Hons) CS' },
-  { label: 'certified', value: 'IBM Data Science' },
+  { label: 'degree', value: 'B.Comp (Hons) CS' },
+  { label: 'certified', value: 'IBM Data Science Professional' },
   // { label: 'projects', value: '3 academic ML/DA' },
 ]
 
@@ -25,7 +25,7 @@ export default function About() {
 
         <div>
           <p className="text-lg leading-relaxed text-ink/90">
-            I'm a final-year Computer Science undergraduate reading for a B.Sc (Hons)
+            I'm a final-year Computer Science undergraduate reading for a Bachelor of Computing (Hons) in Computer Science
             degree, with a focus on data science and machine learning. I like taking
             data that's messy, incomplete, or just hard to make sense of, and working
             it into something a decision-maker can actually use — a model, a dashboard,

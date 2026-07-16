@@ -18,7 +18,7 @@ export const skillGroups = [
   {
     label: 'Data Visualization',
     tag: 'viz',
-    items: ['Matplotlib', 'Seaborn', 'Plotly', 'Dash', 'Go','Express'],
+    items: ['Matplotlib', 'Seaborn', 'Plotly', 'Dash'],
   },
   {
     label: 'Tools',

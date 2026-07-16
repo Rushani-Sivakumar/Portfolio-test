@@ -1,41 +1,14 @@
+
 import { useEffect, useState } from 'react'
 import { Github, Linkedin, Mail, ArrowDown } from 'lucide-react'
-import ProfileImage from '/Profile.jpeg'
-
-const CODE_LINES = [
-  '>>> import pandas as pd',
-  ">>> profile = pd.DataFrame(rushani, index=['value'])",
-  '>>> profile.head()',
-]
-
-const ROWS = [
-  ['name', 'Rushani Sivakumar'],
-  ['role', 'Aspiring Data Scientist'],
-  ['degree', 'B.Sc (Hons) Computer Science'],
-  ['status', 'Open to internship opportunities'],
-]
+import ProfileImage from '/Profile_N.png'
 
 export default function Hero() {
-  const [typed, setTyped] = useState('')
-  const [showTable, setShowTable] = useState(false)
-  const fullScript = CODE_LINES.join('\n')
-
-  useEffect(() => {
-    let i = 0
-    const interval = setInterval(() => {
-      i += 1
-      setTyped(fullScript.slice(0, i))
-      if (i >= fullScript.length) {
-        clearInterval(interval)
-        setTimeout(() => setShowTable(true), 300)
-      }
-    }, 22)
-    return () => clearInterval(interval)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [])
+  
 
   return (
-    <section id="top" className="relative pt-40 pb-24 overflow-hidden">
+    // <section id="top" className="relative pt-40 pb-24 overflow-hidden">
+      <section id="top" className="relative h-screen flex items-center pt-16 overflow-hidden">
       <div className="absolute inset-0 grid-fade pointer-events-none" aria-hidden="true" />
 
       <div className="relative  max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
@@ -85,60 +58,21 @@ export default function Hero() {
         </div>
 
         {/* Right: signature terminal -> dataframe card */}
-        {/* <div className="bg-ink text-paper rounded-md shadow-xl overflow-hidden font-mono text-[13px] leading-relaxed">
-          <div className="flex items-center gap-1.5 px-4 py-3 border-b border-white/10">
-            <span className="w-2.5 h-2.5 rounded-full bg-signal-orange/80" />
-            <span className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
-            <span className="w-2.5 h-2.5 rounded-full bg-signal-green/80" />
-            <span className="ml-3 text-white/40 text-xs">profile.py</span>
-          </div>
+        {/* Right: profile photo */}
 
-          <div className="p-5 min-h-[210px]">
-            <pre className="whitespace-pre-wrap text-white/90">
-              {typed}
-              <span className="inline-block w-2 h-4 bg-signal-blue align-middle animate-blink ml-0.5" />
-            </pre>
-
-            {showTable && (
-              <div className="mt-4 animate-fadeUp">
-                <table className="w-full text-left border-collapse">
-                  <thead>
-                    <tr className="text-white/40 border-b border-white/10">
-                      <th className="py-1.5 pr-3 font-normal"></th>
-                      <th className="py-1.5 pr-3 font-normal">attribute</th>
-                      <th className="py-1.5 font-normal">value</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {ROWS.map(([k, v], idx) => (
-                      <tr key={k} className={idx % 2 === 0 ? 'bg-white/5' : ''}>
-                        <td className="py-1.5 pr-3 text-white/30">{idx}</td>
-                        <td className="py-1.5 pr-3 text-signal-orange">{k}</td>
-                        <td className="py-1.5 text-white/90">{v}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            )}
-          </div>
-        </div> */}
-
-        {/* <div className="w-full h-full p-5 text-paper rounded-md shadow-xl overflow-hidden font-mono text-[13px] leading-relaxed flex items-center justify-center">
-        <img
-          src={ProfileImage}
-          alt="Rushani Sivakumar"
-          className="w-full h-full object-cover rounded-md"
+        <div className="relative h-[55vh] md:h-[60vh]">
+  <div className="absolute -inset-3 border border-signal-blue/30 -z-10" aria-hidden="true" />
+  <img
+    src="/Profile_N.png"
+    alt="Rushani Sivakumar"
+    // 
+    className="w-full h-full object-cover object-[center_14%] grayscale-[15%] contrast-105"
   />
-        </div> */}
+  {/* <span className="absolute bottom-3 left-3 font-mono text-[11px] bg-ink text-paper px-2.5 py-1">
+    rushani.sivakumar
+  </span> */}
+</div>
 
-        <div className=" w-full max-h-[420px] p-20 text-paper rounded-md  overflow-hidden font-mono text-[13px] leading-relaxed flex items-center justify-center">
-          <img
-            src={ProfileImage}
-            alt="Rushani Sivakumar"
-            className="rounded-md"
-          />
-        </div>
       </div>
     </section>
   )
