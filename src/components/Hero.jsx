@@ -8,7 +8,8 @@ export default function Hero() {
 
   return (
     // <section id="top" className="relative pt-40 pb-24 overflow-hidden">
-      <section id="top" className="relative h-screen flex items-center pt-16 overflow-hidden">
+      // <section id="top" className="relative h-screen flex items-center pt-16 overflow-hidden">
+      <section id="top" className="relative min-h-screen flex items-center pt-24 pb-12 overflow-hidden">
       <div className="absolute inset-0 grid-fade pointer-events-none" aria-hidden="true" />
 
       <div className="relative  max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-14 items-center">
@@ -60,13 +61,14 @@ export default function Hero() {
         {/* Right: signature terminal -> dataframe card */}
         {/* Right: profile photo */}
 
-        <div className="relative h-[55vh] md:h-[60vh]">
+        {/* <div className="relative h-[55vh] md:h-[60vh]"> */}
+        <div className="relative h-[35vh] md:h-[60vh]">
   <div className="absolute -inset-3 border border-signal-blue/30 -z-10" aria-hidden="true" />
   <img
     src="/Profile_N.png"
     alt="Rushani Sivakumar"
     // 
-    className="w-full h-full object-cover object-[center_14%] grayscale-[15%] contrast-105"
+    className="w-full h-full object-cover object-[center_13%] grayscale-[15%] contrast-105"
   />
   {/* <span className="absolute bottom-3 left-3 font-mono text-[11px] bg-ink text-paper px-2.5 py-1">
     rushani.sivakumar
